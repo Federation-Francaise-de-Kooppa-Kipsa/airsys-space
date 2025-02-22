@@ -2,7 +2,7 @@
     "name": "helloworld",
     "description": "Simple hello world sample in Node",
     "version": "1.0.0",
-    "private": true,
+    "private": false,
     "main": "index.js",
     "type": "module",
     "scripts": {
