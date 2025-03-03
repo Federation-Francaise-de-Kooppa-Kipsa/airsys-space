@@ -1,0 +1,206 @@
+/* common */
+html {
+	background-color: #f9f9f9;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 15pt;
+	font-family: 'Inter', Roboto;
+	color: #376795;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* header */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	margin: 0;
+}
+
+header img {
+	width: 10%;
+}
+
+.logo-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 20%;
+}
+
+.logo-header img {
+	width: 50%;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 15%;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: #376795;
+}
+
+.navigation a:hover {
+	border-bottom: #376795 1px solid;
+}
+
+/* index.html */
+.container  {
+	width: 90%;
+	margin: 25px;
+	padding: 20px;
+	background-color: #e3e7f1;
+	border-radius: 20px;
+}
+
+.container img {
+	width: 50%;
+}
+
+h1 {
+	font-family: 'Red Hat Display', Roboto;
+}
+
+h1, .container span {
+	color: #274d72;
+	font-weight: bold;
+}
+
+.sub-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+p {
+	margin: 20px;
+}
+
+/* contact.html */
+form {
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	margin: 0;
+}
+
+.field{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	background-color: #f9f9f9;
+	padding: 5px;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	padding: 24px;
+}
+
+input, textarea {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid lightgrey;
+	font-family: 'Inter', Roboto;
+	font-size: 12pt;
+	padding: 5px;
+	background-color: transparent;
+	outline: none;
+	height: 1.8em;
+}
+
+textarea {
+	resize: none;
+	height: 100%;
+}
+
+input:focus, textarea:focus {
+	border-color: #376795;
+}
+
+span {
+	color: red;
+}
+
+.comment {
+	height: 25%;
+}
+
+button {
+	color: #e3e7f1;
+	background-color: #376795;
+	border: 1px solid #376795;
+	border-radius: 5px;
+	font-size: 15pt;
+	width: 20%;
+	padding: 5px;
+}
+
+button:hover {
+	color: #376795;
+	background-color: #e3e7f1;
+}
+
+#required {
+	display: flex;
+	justify-content: space-between;
+	width:100%;
+}
+
+#required div{
+	font-size: 12pt;
+	color: red;
+	display: flex;
+	align-items: center;
+}
+
+#popup {
+	display: none;
+	position: fixed;
+	color: #376795;
+	font-family: 'Inter', Roboto;
+	font-size: 15pt;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+#popup button {
+	width: 30%;
+}
+
+/* footer */
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: red 1px solid;
+}
+
+footer div {
+	width: 30%;
+}
+
+footer img {
+	width: 50%;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+	.field {
+		background-color: red;
+	}
+}
