@@ -31,7 +31,7 @@ header img {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 20%;
+	width: 15%;
 }
 
 .logo-header img {
@@ -196,6 +196,11 @@ footer div {
 
 footer img {
 	width: 50%;
+}
+
+footer span {
+	color: #274d72;
+	font-weight: bold;
 }
 
 /* responsive */
