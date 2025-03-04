@@ -87,11 +87,8 @@ p {
 
 /* contact.html */
 form {
-	height: 100%;
-	display: flex;
-	justify-content: space-around;
-	flex-direction: column;
-	margin: 0;
+	width: 30%;
+	margin-bottom: 20px;
 }
 
 .field{
@@ -99,10 +96,10 @@ form {
 	justify-content: space-between;
 	flex-direction: column;
 	background-color: #f9f9f9;
-	padding: 5px;
 	border: 1px solid lightgrey;
 	border-radius: 5px;
 	padding: 24px;
+	margin: 20px 0;
 }
 
 input, textarea {
