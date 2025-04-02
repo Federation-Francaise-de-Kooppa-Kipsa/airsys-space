@@ -24,7 +24,6 @@
 
 <body>
 	<header>
-		<img src="resources/logo_ig2i.png" alt="Logo ig2i">
 		<a class="logo-header" href="index.html">
 			<img src="resources/logo_V1.png" alt="Logo sans nom d'équipe">
 			<img src="resources/logo_V3.png" alt="Nom d'équipe sans logo">
@@ -32,7 +31,11 @@
 		<div class="navigation">
 			<a href="contact.html">Nous contacter</a>
 			<a href="project.html">Nos projets</a>
+			<a href="/resources/Plaquette_AIrsys_Space.pdf"  target="_blank">Notre plaquette</a>
 		</div>
+		<a id="ig2i" href="https://ig2i.centralelille.fr/">
+			<img src="resources/logo_ig2i.png" alt="Logo ig2i">
+		</a>
 	</header>
 
 	<div class="container">
@@ -50,26 +53,47 @@
 		</p>
 	</div>
 
-	<div class="container">
-		<h1>Centrale Lille - IG2I</h1>
-		<div class="sub-container">
-			<img src="resources/ig2i.jpg" alt="Photo de l'ig2i">
-			<p>IG2I est une formation publique qui propose une formation d’ingénieur de Centrale Lille dans les domaines
-				de
-				l’informatique et de l’industrie sur une durée totale de 5 ans accréditée par la CTI.
+	<div class="container display">
+		<img src="resources/ig2i.jpg" alt="Photo de l'ig2i">
+		<div>
+			<h1>Centrale Lille - IG2I</h1>
+			<p><span>IG2I</span> est une formation publique qui propose une formation d’ingénieur de <span>Centrale Lille</span> dans les domaines
+				de <span>l’informatique et de l’industrie</span> sur une durée totale de <span>5 ans accréditée par la CTI.</span>
 			</p>
 		</div>
 	</div>
 
 	<div class="container">
-		<h1>PLANNING</h1>
-		<img src="resources/planning.jpg" alt="Planning">
+		<div id="info-container">
+			<h1>PLANNING</h1>
+			<img id="info" src="resources/info.png" alt="Info" onclick="toggleText()">
+		</div>
+		<div id="planning">
+			<img src="resources/planning.png" alt="Planning">
+			<p id="detail" class="hidden"><u>Détail du planning :</u></br></br>
+				Spécification :</br>
+					- Etude d'innovation</br>
+					- Analyse du marché</br>
+					- Démarche scientifique</br>
+					- Dossier de spécifications</br></br>
+
+				Conception :</br>
+					- Etat de l'art</br>
+					- Dossier de conception technique</br></br>
+
+				Réalisation :</br>
+					- Réalisation d'un prototype</br></br>
+
+				Validation :</br>
+					- Tests associés
+			</p>
+		</div>
 	</div>
 
-	<div class="container">
-		<h1>NOTRE EQUIPE</h1>
-		<div class="sub-container">
-			<img src="resources/equipe.jpg" alt="Photo de l'équipe">
+	<div class="container display">
+		<img src="resources/equipe.png" alt="Photo de l'équipe">
+		<div>
+			<h1>NOTRE EQUIPE</h1>
 			<p>La distribution des rôles de notre équipe nous permettra de nous organiser et de répondre à des
 				problématiques de l’envergure d’un projet professionnel.
 			</p>

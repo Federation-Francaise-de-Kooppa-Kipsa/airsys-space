@@ -24,7 +24,6 @@
 
 <body>
 	<header>
-		<img src="resources/logo_ig2i.png" alt="Logo ig2i">
 		<a class="logo-header" href="index.html">
 			<img src="resources/logo_V1.png" alt="Logo sans nom d'équipe">
 			<img src="resources/logo_V3.png" alt="Nom d'équipe sans logo">
@@ -32,8 +31,14 @@
 		<div class="navigation">
 			<a href="contact.html">Nous contacter</a>
 			<a href="project.html">Nos projets</a>
+			<a href="/resources/Plaquette_AIrsys_Space.pdf"  target="_blank">Notre plaquette</a>
 		</div>
+		<a id="ig2i" href="https://ig2i.centralelille.fr/">
+			<img src="resources/logo_ig2i.png" alt="Logo ig2i">
+		</a>
 	</header>
+
+	<h1 class="space-header">Nos Projets</h1>
 
 	<div class="row">
 		<div class="project">
@@ -42,7 +47,7 @@
 			<p>Émulation d'un système moteur d'une voiture électrique avec utilisation de Matlab et Simulink</p>
 		</div>
 		<div class="project">
-			<img src="resources/recherche.png" alt="Papier de recherche">
+			<img src="resources/papier.png" alt="Papier de recherche">
 			<h1>Participation à un papier de recherche</h1>
 			<p>Participation à un papier de recherche sur l'estimation de la charge des batteries Lithium-Ion</p>
 		</div>
@@ -55,19 +60,48 @@
 
 	<div class="row">
 		<div class="project">
-			<img src="resources/logo_ig2i.png" alt="Logo ig2i">
+			<img src="resources/cyber.png" alt="Cybersécurité pour satellites">
 			<h1>Simulateur de cybersécurité pour satellites </h1>
-			<p>Test d’attaques et défenses sur des systèmes embarqués </p>
+			<p>Test d’attaques et défenses sur des systèmes embarqués</p>
 		</div>
 		<div class="project">
-			<img src="resources/logo_ig2i.png" alt="Logo ig2i">
+			<img src="resources/redondance.png" alt="Redondance logicielle">
 			<h1>Redondance logicielle pour systèmes critiques</h1>
 			<p>Mise en place d’un logiciel tolérant aux pannes pour assurer la continuité d'un système embarqué</p>
 		</div>
 		<div class="project">
-			<img src="resources/logo_ig2i.png" alt="Logo ig2i">
+			<img src="resources/agent.png" alt="Agent conversationnel">
+			<h1>Agent conversationnel</h1>
+			<p>Développement d'un agent conversationnel avec IA à propos du fonctionnement de notre école</p>
+		</div>
+	</div>
+
+	<h1>Projets de fin d'études de l'école</h1>
+	<p id="separator">Voici quelques projets de fin d'études réalisés par d'anciens élèves de notre école</p>
+
+	<div class="row">
+		<div class="project">
+			<div class="slider">
+				<button onclick="nextImage()">◄</button>
+				<img id="slider1" src="resources/chantier1.png" alt="Module de chantier">
+				<img id="slider2" src="resources/chantier2.png" alt="Module de chantier" class="hidden" >
+				<button onclick="nextImage()">►</button>
+			</div>
+			<h1>Module de chantier</h1>
+			<p>Réalisation d'un module de contrôle à distance pour les grues de chantier.
+				En partenariat avec Bouygues Construction </p>
+		</div>
+		<div class="project">
+			<img src="resources/stellar_intelligence.png" alt="Stellar Intelligence">
 			<h1>Stellar Intelligence</h1>
-			<p>Création d'un système de navigation autonome via IA (modèle end-to-end ) pour Rover Martien avec la collaboration de l'Agence Spatiale Européenne (ESA)</p>
+			<p>Création d'un système de navigation autonome via IA (modèle end-to-end ) pour Rover Martien. 
+				En collaboration de l'Agence Spatiale Européenne (ESA)</p>
+		</div>
+		<div class="project">
+			<img src="resources/novia.png" alt="NovIA">
+			<h1>NovIA</h1>
+			<p>Prédiction de la part de marché d'un produit avant sa mise en rayon via un modèle de Machine Learning.
+				En partenariat avec Kyndryl (IBM) </p>
 		</div>
 	</div>
 
