@@ -28,7 +28,6 @@ h1 {
 header {
 	position: fixed;
 	display: flex;
-	/* justify-content: space-between; */
 	align-items: center;
 	width: 100%;
 	padding: 10px;
@@ -97,7 +96,7 @@ header {
 }
 
 .container img {
-	width: 100%;
+	max-width: 500px;
 }
 
 #info-container {
@@ -119,13 +118,15 @@ header {
 	align-items: center;
 	justify-content: center;
 }
-
+#planning h1 {
+	margin: 0 20px 0 0;
+}
 #planning p {
 	margin: 0;
 }
 
 #planning img{
-	width: 75%;
+	max-width: 1000px;
 }
 
 .display {
@@ -326,7 +327,284 @@ footer span {
 
 /* responsive */
 @media (max-width: 768px) {
+	body {
+		font-size: 10pt;
+	}
+
+	/* header */
+	header {
+		padding: 10px;
+	}
+
+	.logo-header {
+		width: 15%;
+		justify-content: center;
+	}
+
+	.logo-header img {
+		width: 10%;
+	}
+
+	.navigation {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 25%;
+		margin: 0 20px 0 auto;
+	}
+
+	.navigation a {
+		text-decoration: none;
+		color: #376795;
+	}
+
+	.navigation a:hover {
+		border-bottom: #376795 1px solid;
+	}
+
+	#ig2i {
+		width: 8%;
+		margin-right: 25px;
+	}
+
+	#ig2i img{
+		width: 100%;
+	}
+
+	/* index.html */
+	.container {
+		width: 80%;
+		padding: 20px;
+	}
+
+	.container:first-of-type {
+		margin-top: 30%;
+	}
+
+	.container img {
+		max-width: 250px;
+		margin: 0 auto;
+	}
+
+	#info-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	#info-container img {
+		width: 3%;	
+	}
+
+	#info:hover {
+		cursor: pointer;
+	}
+
+	#planning {
+		display: block;
+	}
+
+	#planning h1 {
+		margin: 0 20px 0 0;
+	}
+	
+	#planning p {
+		margin: 0;
+	}
+
+	#planning img{
+		width: 250px;
+	}
+
+	.display {
+		display: block;
+	}
+
+	/* contact.html */
+	form {
+		width: 30%;
+		margin: 10% 0 20px 0;
+	}
+
 	.field {
-		background-color: red;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		background-color: #f9f9f9;
+		border: 1px solid lightgrey;
+		border-radius: 5px;
+		padding: 24px;
+		margin: 0 0 20px 0;
+	}
+
+	input,
+	textarea {
+		border: none;
+		border-bottom: 1px solid lightgrey;
+		font-family: 'Inter', Roboto;
+		font-size: 12pt;
+		padding: 5px;
+		background-color: transparent;
+		outline: none;
+	}
+
+	input {
+		height: 1.8em;
+	}
+
+	textarea {
+		resize: none;
+		height: 5em;
+	}
+
+	input:focus,
+	textarea:focus {
+		border-color: #376795;
+	}
+
+	form span {
+		color: red;
+	}
+
+	form button {
+		color: #e3e7f1;
+		background-color: #376795;
+		border: 1px solid #376795;
+		border-radius: 5px;
+		font-size: 15pt;
+		width: 20%;
+		padding: 5px;
+	}
+
+	form button:hover {
+		color: #376795;
+		background-color: #f9f9f9;
+	}
+
+	#required {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#required div {
+		font-size: 12pt;
+		color: red;
+		display: flex;
+		align-items: center;
+	}
+
+	#popup {
+		display: none;
+		position: fixed;
+		color: #376795;
+		font-family: 'Inter', Roboto;
+		font-size: 15pt;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #f9f9f9;
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		text-align: center;
+	}
+
+	#popup button {
+		width: 30%;
+	}
+
+	/* project.html */
+	.space-header {
+		margin-top: 10%;
+	}
+
+	.row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.project {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 30%;
+		height: 25vw;
+		margin: 20px;
+		padding: 20px;
+		background-color: #e3e7f1;
+		border-radius: 20px;
+	}
+
+	.project img {
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	.project h1,
+	.project p {
+		text-align: center;
+	}
+
+	.project h1 {
+		margin: 0;
+	}
+
+	#separator{
+		margin: 0 0 20px 0;
+	}
+
+	.slider {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.slider button {
+		width: 50px;
+		height: 50px;
+		border-radius: 25px;
+		background: rgba(0, 0, 0, 0.5);
+		color: #f9f9f9;
+		border: none;
+		padding: 10px;
+		cursor: pointer;
+		font-size: 15pt;
+	}
+
+	.slider button:hover {
+		opacity: 0.5;
+	}
+
+	/* footer */
+	footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 20px;
+		margin-top: 20px;
+		background-color: #e3e7f1;
+	}
+
+	footer div {
+		width: 20%;
+		margin: 0 5%;
+	}
+
+	#catchphrase {
+		font-size: 40pt;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	footer img {
+		width: 50%;
+	}
+
+	footer span {
+		color: #274d72;
+		font-weight: bold;
 	}
 }
