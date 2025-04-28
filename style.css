@@ -227,8 +227,20 @@ form button:hover {
 }
 
 #popup button {
+	color: #e3e7f1;
+	background-color: #376795;
+	border: 1px solid #376795;
+	border-radius: 5px;
+	font-size: 15pt;
+	padding: 5px;
 	width: 30%;
 }
+
+#popup button:hover {
+	color: #376795;
+	background-color: #f9f9f9;
+}
+
 
 /* project.html */
 .space-header {
@@ -267,7 +279,11 @@ form button:hover {
 	margin: 0;
 }
 
-#separator{
+#separator {
+	text-align: center;
+}	
+
+#separator p{
 	margin: 0 0 20px 0;
 }
 
@@ -339,32 +355,21 @@ footer span {
 	.logo-header {
 		width: 15%;
 		justify-content: center;
+		margin-left: 20px;
 	}
 
 	.logo-header img {
-		width: 10%;
+		width: 100%;
 	}
 
 	.navigation {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		width: 25%;
-		margin: 0 20px 0 auto;
-	}
-
-	.navigation a {
-		text-decoration: none;
-		color: #376795;
-	}
-
-	.navigation a:hover {
-		border-bottom: #376795 1px solid;
+		width: 100%;
+		margin: 0;
+		font-size: 8pt;
 	}
 
 	#ig2i {
-		width: 8%;
-		margin-right: 25px;
+		width: 15%;
 	}
 
 	#ig2i img{
@@ -375,15 +380,15 @@ footer span {
 	.container {
 		width: 80%;
 		padding: 20px;
+		text-align: center;
 	}
 
 	.container:first-of-type {
-		margin-top: 30%;
+		margin-top: 20%;
 	}
 
 	.container img {
 		max-width: 250px;
-		margin: 0 auto;
 	}
 
 	#info-container {
@@ -393,23 +398,15 @@ footer span {
 	}
 
 	#info-container img {
-		width: 3%;	
-	}
-
-	#info:hover {
-		cursor: pointer;
+		width: 10%;	
 	}
 
 	#planning {
 		display: block;
 	}
 
-	#planning h1 {
-		margin: 0 20px 0 0;
-	}
-	
 	#planning p {
-		margin: 0;
+		margin: 20px 0;
 	}
 
 	#planning img{
@@ -420,167 +417,46 @@ footer span {
 		display: block;
 	}
 
+	.display div {
+		margin: 0;
+	}
+
 	/* contact.html */
 	form {
-		width: 30%;
-		margin: 10% 0 20px 0;
-	}
-
-	.field {
-		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
-		background-color: #f9f9f9;
-		border: 1px solid lightgrey;
-		border-radius: 5px;
-		padding: 24px;
-		margin: 0 0 20px 0;
-	}
-
-	input,
-	textarea {
-		border: none;
-		border-bottom: 1px solid lightgrey;
-		font-family: 'Inter', Roboto;
-		font-size: 12pt;
-		padding: 5px;
-		background-color: transparent;
-		outline: none;
-	}
-
-	input {
-		height: 1.8em;
-	}
-
-	textarea {
-		resize: none;
-		height: 5em;
-	}
-
-	input:focus,
-	textarea:focus {
-		border-color: #376795;
-	}
-
-	form span {
-		color: red;
+		width: 90%;
+		margin-top: 20%;
 	}
 
 	form button {
-		color: #e3e7f1;
-		background-color: #376795;
-		border: 1px solid #376795;
-		border-radius: 5px;
-		font-size: 15pt;
-		width: 20%;
-		padding: 5px;
-	}
-
-	form button:hover {
-		color: #376795;
-		background-color: #f9f9f9;
-	}
-
-	#required {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	#required div {
-		font-size: 12pt;
-		color: red;
-		display: flex;
-		align-items: center;
+		width: 25%;
 	}
 
 	#popup {
-		display: none;
-		position: fixed;
-		color: #376795;
-		font-family: 'Inter', Roboto;
-		font-size: 15pt;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		background-color: #f9f9f9;
-		padding: 20px;
-		border-radius: 10px;
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-		text-align: center;
+		width: 50%;
 	}
 
 	#popup button {
-		width: 30%;
+		width: 50%;
 	}
 
 	/* project.html */
 	.space-header {
-		margin-top: 10%;
+		margin-top: 20%;
 	}
 
 	.row {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		flex-direction: column;
 	}
 
 	.project {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 30%;
-		height: 25vw;
-		margin: 20px;
-		padding: 20px;
-		background-color: #e3e7f1;
-		border-radius: 20px;
-	}
-
-	.project img {
-		width: 50%;
-		margin-bottom: 20px;
-	}
-
-	.project h1,
-	.project p {
-		text-align: center;
-	}
-
-	.project h1 {
-		margin: 0;
-	}
-
-	#separator{
-		margin: 0 0 20px 0;
-	}
-
-	.slider {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-	}
-
-	.slider button {
-		width: 50px;
-		height: 50px;
-		border-radius: 25px;
-		background: rgba(0, 0, 0, 0.5);
-		color: #f9f9f9;
-		border: none;
-		padding: 10px;
-		cursor: pointer;
-		font-size: 15pt;
-	}
-
-	.slider button:hover {
-		opacity: 0.5;
+		width: 80%;
+		height: auto;
 	}
 
 	/* footer */
 	footer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		flex-direction: column;
+		justify-content: left;
 		width: 100%;
 		padding: 20px;
 		margin-top: 20px;
@@ -588,23 +464,19 @@ footer span {
 	}
 
 	footer div {
-		width: 20%;
-		margin: 0 5%;
+		width: 90%;
+		font-size: 15pt;
+		text-align: center;
 	}
 
 	#catchphrase {
-		font-size: 40pt;
+		font-size: 15pt;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
 	}
 
 	footer img {
-		width: 50%;
-	}
-
-	footer span {
-		color: #274d72;
-		font-weight: bold;
+		width: 100%;	
 	}
 }
