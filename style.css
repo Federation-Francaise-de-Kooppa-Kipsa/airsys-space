@@ -29,6 +29,7 @@ header {
 	position: fixed;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	width: 100%;
 	padding: 10px;
 	background-color: #f9f9f9;
@@ -40,7 +41,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	width: 15%;
-	margin-left: 50px;
+	margin-left: 25px;
 }
 
 .logo-header img {
@@ -51,8 +52,7 @@ header {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 25%;
-	margin: 0 20px 0 auto;
+	width: 50%;
 }
 
 .navigation a {
@@ -65,7 +65,7 @@ header {
 }
 
 #ig2i {
-	width: 8%;
+	width: 15%;
 	margin-right: 20px;
 }
 
@@ -258,7 +258,6 @@ form button:hover {
 	flex-direction: column;
 	align-items: center;
 	width: 30%;
-	height: 25vw;
 	margin: 20px;
 	padding: 20px;
 	background-color: #e3e7f1;
@@ -273,10 +272,12 @@ form button:hover {
 .project h1,
 .project p {
 	text-align: center;
+	margin: 0;
 }
 
 .project h1 {
-	margin: 0;
+	margin-bottom: 10px;
+	font-size: 25pt;
 }
 
 #separator {
@@ -355,7 +356,7 @@ footer span {
 	.logo-header {
 		width: 15%;
 		justify-content: center;
-		margin-left: 20px;
+		margin-left: 15px;
 	}
 
 	.logo-header img {
@@ -370,6 +371,7 @@ footer span {
 
 	#ig2i {
 		width: 15%;
+		margin-right: 10px;
 	}
 
 	#ig2i img{
